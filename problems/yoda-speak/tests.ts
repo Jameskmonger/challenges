@@ -24,7 +24,7 @@ export class Tests {
     },
     {
       input: "I think we are done with the examples",
-      output: "We are done with examples, I think."
+      output: "We are done with the examples, I think."
     },
     {
       input: "He is your son, Vader",
