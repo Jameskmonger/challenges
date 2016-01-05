@@ -1,0 +1,25 @@
+{
+  "name": "challenges",
+  "version": "1.0.0",
+  "description": "Programming challenges from around the universe.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jameskmonger/challenges.git"
+  },
+  "keywords": [
+    "Challenges"
+  ],
+  "author": "James Monger",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Jameskmonger/challenges/issues"
+  },
+  "homepage": "https://github.com/Jameskmonger/challenges",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
