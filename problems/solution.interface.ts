@@ -1,3 +1,3 @@
-export interface ISolution {
-  solve(input: any): any;
+export interface ISolution<I, O> {
+  solve(input: I): O;
 }

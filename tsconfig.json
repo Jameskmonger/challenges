@@ -25,6 +25,7 @@
     "files": [
         "gulpfile.ts",
         "problems/solution.interface.ts",
+        "problems/yoda-speak/solution.ts",
         "problems/yoda-speak/tests.ts",
         "typings/gulp/gulp.d.ts",
         "typings/node/node.d.ts",
