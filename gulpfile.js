@@ -5,6 +5,7 @@ gulp.task('challenge', function () {
         console.log("ERROR: You must select a challenge with the --name parameter.");
         return;
     }
+    var verbose = argv.loud || false;
     var challenge = argv.name;
     var solutionPath = Utilities.GetSolutionPath(challenge);
     try {
@@ -34,7 +35,9 @@ gulp.task('challenge', function () {
         var output = solution.solve(test.input);
         if (output === test.output) {
             passedTests++;
-            console.log("PASS: Test passed for input '" + test.input + "'");
+            if (verbose) {
+                console.log("PASS: Test passed for input '" + test.input + "'");
+            }
         }
         else {
             console.log("FAIL: Test failed for input '" + test.input + "'");

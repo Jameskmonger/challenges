@@ -8,8 +8,10 @@ import {ISolution} from './problems/solution.interface';
 gulp.task('challenge', function() {
   if (argv.name === undefined) {
     console.log("ERROR: You must select a challenge with the --name parameter.");
-    return
+    return;
   }
+
+  var verbose: boolean = argv.loud || false;
 
   var challenge: string = argv.name;
   var solutionPath: string = Utilities.GetSolutionPath(challenge);
@@ -47,7 +49,10 @@ gulp.task('challenge', function() {
 
     if (output === test.output) {
       passedTests++;
-      console.log("PASS: Test passed for input '" + test.input + "'");
+
+      if (verbose) {
+        console.log("PASS: Test passed for input '" + test.input + "'");
+      }
     } else {
       console.log("FAIL: Test failed for input '" + test.input + "'");
       console.log("    - Expected: " + test.output);
