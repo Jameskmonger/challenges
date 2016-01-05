@@ -3,9 +3,25 @@
 const gulp = require('gulp');
 const argv = require('yargs').argv;
 
+import {ISolution} from './problems/solution.interface';
+
 gulp.task('challenge', function() {
-  if (argv.chosenChallenge === undefined) {
-    console.log("ERROR: You must select a challenge with the --challenge parameter.");
+  if (argv.name === undefined) {
+    console.log("ERROR: You must select a challenge with the --name parameter.");
     return
   }
+
+  var challenge: string = argv.name;
+  var solutionPath: string = Utilities.GetSolutionPath(challenge);
+  var Solution = require(solutionPath).Solution;
+
+  var solution = new Solution();
+
+  console.log(solution.solve("bla"));
 });
+
+class Utilities {
+  static GetSolutionPath(challengeName: string) {
+    return ('./problems/' + challengeName + '/solution');
+  }
+}
