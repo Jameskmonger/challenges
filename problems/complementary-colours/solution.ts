@@ -23,7 +23,7 @@ export class Solution implements ISolution<string, string> {
   solve(input: string) {
     var output = "#";
 
-    for (var i = 1; i < 6; i++) {
+    for (var i = 1; i < 7; i++) {
       output += Solution.PAIRS[input[i]];
     }
 
