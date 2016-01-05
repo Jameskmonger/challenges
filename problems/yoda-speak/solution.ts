@@ -15,6 +15,8 @@ export class Solution implements ISolution<string, string> {
 
     var rearranged = Solution.RearrangeParts(parts);
 
+    rearranged = Solution.FinishWithFullStopIfNeeded(rearranged);
+
     var end = rearranged.join(" ");
 
     return end;
@@ -36,11 +38,34 @@ export class Solution implements ISolution<string, string> {
       parts.push(input[i]);
     }
 
-    parts[parts.length - 1] = parts[parts.length - 1] + ',';
+    parts = Solution.AddCommaToLastPart(parts);
 
     parts.push(input[0]);
     parts.push(input[1]);
 
     return parts;
+  }
+
+  static AddCommaToLastPart(input: string[]): string[] {
+    var pointer = input.length - 1;
+
+    input[pointer] = input[pointer] + ',';
+
+    return input;
+  }
+
+  static FinishWithFullStopIfNeeded(input: string[]): string[] {
+    var pointer = input.length - 1;
+    var value = input[pointer];
+    var valuePointer = value.length - 1;
+
+    if (value[valuePointer] === '.') {
+      return input;
+    }
+
+    value = value + '.';
+
+    input[pointer] = value;
+    return input;
   }
 }
