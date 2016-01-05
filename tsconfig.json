@@ -23,6 +23,8 @@
         "rewriteTsconfig": true
     },
     "files": [
-        "problems/yoda-speak/tests.ts"
+        "gulpfile.ts",
+        "problems/yoda-speak/tests.ts",
+        "typings/tsd.d.ts"
     ]
 }
