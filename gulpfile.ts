@@ -13,7 +13,14 @@ gulp.task('challenge', function() {
 
   var challenge: string = argv.name;
   var solutionPath: string = Utilities.GetSolutionPath(challenge);
-  var Solution = require(solutionPath).Solution;
+
+  try
+  {
+    var Solution = require(solutionPath).Solution;
+  } catch (err) {
+    console.log("ERROR: Unable to find challenge '" + challenge + "'");
+    return;
+  }
 
   var solution = new Solution();
 
