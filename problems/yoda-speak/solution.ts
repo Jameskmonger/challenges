@@ -17,6 +17,8 @@ export class Solution implements ISolution<string, string> {
 
     rearranged = Solution.FinishWithFullStopIfNeeded(rearranged);
 
+    rearranged = Solution.DecapitaliseLatePronouns(rearranged);
+
     var end = rearranged.join(" ");
 
     return Solution.CapitaliseString(end);
@@ -90,5 +92,19 @@ export class Solution implements ISolution<string, string> {
 
   static ReplaceAt(input: string, replace: string, index: number): string {
     return input.substr(0, index) + replace + input.substr(index + replace.length);
+  }
+
+  static DecapitaliseLatePronouns(input: string[]): string[] {
+    for (var i = 1; i < input.length; i++) {
+      if (input[i] === 'I') {
+        continue;
+      }
+
+      if (Solution.EqualsAnyPronoun(input[i])) {
+        input[i] = input[i].toLowerCase();
+      }
+    }
+
+    return input;
   }
 }
