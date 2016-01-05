@@ -44,27 +44,27 @@ export class Tests {
     },
     {
       input: "I’ll be the next President, I swear!",
-      output: TOO_DIFFICULT
+      output: Tests.TOO_DIFFICULT
     },
     {
       input: "This challenge is great!",
-      output: TOO_DIFFICULT
+      output: Tests.TOO_DIFFICULT
     },
     {
       input: "Is this challenge great?",
-      output: TOO_DIFFICULT
+      output: Tests.TOO_DIFFICULT
     },
     {
       input: "Luke is not ready for this task",
-      output: TOO_DIFFICULT
+      output: Tests.TOO_DIFFICULT
     },
     {
       input: "Somebody loves constants like π",
-      output: TOO_DIFFICULT
+      output: Tests.TOO_DIFFICULT
     },
     {
       input: "",
-      output: TOO_DIFFICULT
+      output: Tests.TOO_DIFFICULT
     }
   ];
 }
