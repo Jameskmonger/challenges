@@ -28,11 +28,6 @@
         "problems/complementary-colours/tests.ts",
         "problems/solution.interface.ts",
         "problems/yoda-speak/solution.ts",
-        "problems/yoda-speak/tests.ts",
-        "typings/gulp/gulp.d.ts",
-        "typings/node/node.d.ts",
-        "typings/orchestrator/orchestrator.d.ts",
-        "typings/q/Q.d.ts",
-        "typings/tsd.d.ts"
+        "problems/yoda-speak/tests.ts"
     ]
 }
