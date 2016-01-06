@@ -1,5 +1,5 @@
 # challenges
-Programming challenges from around the universe.
+Programming challenges from around the universe with a super funky test suite.
 
 ## Running
 To run a solution, type:
