@@ -70,6 +70,6 @@ export class Tests implements ITestSuite<string, string> {
         input: "",
         output: Tests.TOO_DIFFICULT
       }
-    ]
+    ];
   }
 }
