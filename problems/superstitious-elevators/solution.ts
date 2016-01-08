@@ -14,9 +14,14 @@ export class Solution implements ISolution<number, string> {
     for (let f of floors) {
       counter++;
 
-      out = out + f;
+      if (counter === 1) {
+        out = out + f + " ";
+      } else if (counter === 2) {
+        out = out + f + "\n";
+        counter = 0;
+      }
     }
-    return out;
+    return out.split("\n").reverse().slice(1).join("\n") + "\n";
   }
 
   private isSafe(number: number): boolean {
