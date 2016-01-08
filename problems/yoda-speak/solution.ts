@@ -7,7 +7,7 @@ export class Solution implements ISolution<string, string> {
 
   static INVALID: string = "Too difficult, this sentence is.";
 
-  solve(input: string) {
+  solve(input: string): string {
     var parts = input.split(' ');
     if (!Solution.EqualsAnyPronoun(parts[0])) {
       return Solution.INVALID;

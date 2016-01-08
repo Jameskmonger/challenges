@@ -1,7 +1,7 @@
 import {ISolution} from '../solution.interface';
 
 export class Solution implements ISolution<string, string> {
-  solve(x: string) {
+  solve(x: string): string {
     for (var i = 0, c = "0123456789abcdef", p = {}; i < 16; i++) {
       p[c[i]] = c[15 - i];
     }
