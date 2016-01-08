@@ -36,13 +36,15 @@ gulp.task('challenge', function() {
     return;
   }
 
-  if (Tests.tests === undefined) {
-    console.log("ERROR: Tests file must contain an array called 'tests'");
+  var testSuite = new Tests();
+
+  if (testSuite.getTests === undefined) {
+    console.log("ERROR: Tests file must implement ITestSuite<,>");
   }
 
   var totalTests = 0;
   var passedTests = 0;
-  for (var test of Tests.tests) {
+  for (var test of testSuite.getTests()) {
     totalTests++;
 
     var output = solution.solve(test.input);
