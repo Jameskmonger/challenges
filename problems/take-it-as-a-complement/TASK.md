@@ -5,4 +5,8 @@
 Pablo van Vinci, the famous artist needs your help!
 ------
 
+### Rules
+
+### Examples
+
 [scream1]:http://i.imgur.com/AkatXWi.jpg?1
