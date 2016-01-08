@@ -1,16 +1,13 @@
 import {ISolution} from '../solution.interface';
 
 export class Solution implements ISolution<string, string> {
-  static CHARS = "0123456789abcdef";
-
-  solve(input: string) {
-    var pairs = {};
-    for (var c = 0; c < Solution.CHARS.length; c++) {
-      pairs[Solution.CHARS[c]] = Solution.CHARS[Solution.CHARS.length - 1 - c];
+  solve(x: string) {
+    for (var i = 0, c = "0123456789abcdef", p = {}; i < 16; i++) {
+      p[c[i]] = c[15 - i];
     }
 
-    return "#" + pairs[input[1]] + pairs[input[2]]
-                + pairs[input[3]] + pairs[input[4]]
-                + pairs[input[5]] + pairs[input[6]];
+    return "#" + p[x[1]] + p[x[2]]
+                + p[x[3]] + p[x[4]]
+                + p[x[5]] + p[x[6]];
   }
 }
