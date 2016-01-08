@@ -28,21 +28,25 @@ Your out must end with a full stop.
 
 ### Examples
 
-> **Input: ** You have to win this code challenge
+```
+Input: You have to win this code challenge
+Output: To win this code challenge, you have.
+```
 
-> **Output: ** To win this code challenge, you have.
+```
+Input: I liked the Star Wars original trilogy more than the prequel’s one.
+Output: The Star Wars original trilogy more than the prequel’s one, I liked.
+```
 
-> **Input: ** I liked the Star Wars original trilogy more than the prequel’s one.
+```
+Input: He is your son, Vader
+Output: Your son, Vader, he is.
+```
 
-> **Output: ** The Star Wars original trilogy more than the prequel’s one, I liked.
-
-> **Input: ** He is your son, Vader
-
-> **Output: ** Your son, Vader, he is.
-
-> **Input: ** I’ll be the next President, I swear!
-
-> **Output: ** Too difficult, this sentence is.
+```
+Input: I’ll be the next President, I swear!
+Output: Too difficult, this sentence is.
+```
 
 [yoda1]: http://i.imgur.com/4jeBvb8.gif
 [poe1]: http://i.imgur.com/sphSOsp.gif
