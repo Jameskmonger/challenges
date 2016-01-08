@@ -25,14 +25,14 @@
     },
     "files": [
         "gulpfile.ts",
+        "problems/challenging-this-is/solution.ts",
+        "problems/challenging-this-is/tests.ts",
         "problems/complementary-colours/solution.ts",
         "problems/complementary-colours/tests.ts",
         "problems/solution.interface.ts",
         "problems/superstitious-elevators/solution.ts",
         "problems/superstitious-elevators/tests.ts",
         "problems/test.interface.ts",
-        "problems/testsuite.interface.ts",
-        "problems/yoda-speak/solution.ts",
-        "problems/yoda-speak/tests.ts"
+        "problems/testsuite.interface.ts"
     ]
 }
