@@ -21,3 +21,20 @@ For any number _n_, the sequence is `n - 1`'s sequence, followed by the nth char
 ## Rules
 
 Take in a number, return the abacaba sequence for that number. Your solution must solve for all numbers up to 25.
+
+## Examples
+
+```
+Input: 0
+Output: a
+```
+
+```
+Input: 1
+Output: aba
+```
+
+```
+Input: 4
+Output: abacabadabacabaEabacabadabacaba
+```
