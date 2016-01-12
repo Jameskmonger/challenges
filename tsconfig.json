@@ -25,6 +25,7 @@
     },
     "files": [
         "gulpfile.ts",
+        "problems/abacaba/tests.ts",
         "problems/challenging-this-is/solution.ts",
         "problems/challenging-this-is/tests.ts",
         "problems/solution.interface.ts",
