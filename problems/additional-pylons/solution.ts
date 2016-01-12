@@ -34,6 +34,6 @@ export class Solution implements ISolution<string, string> {
       return "true";
     }
 
-    return units.join(' ');
+    return "You must construct " + Math.ceil((supply * -1) / 8) + " additional pylons!";
   }
 }
