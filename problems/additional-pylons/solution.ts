@@ -31,12 +31,10 @@ export class Solution implements ISolution<string, string> {
       supply -= this.units[u];
     }
 
-    if (supply >= 0) {
-      return "true";
-    }
-
     let pylonsRequired = Math.ceil((supply * -1) / pylonValue);
 
-    return "You must construct " + pylonsRequired + " additional " + (pylonsRequired === 1 ? "pylon" : "pylons") + "!";
+    return (supply >= 0
+      ? "true"
+      : "You must construct " + pylonsRequired + " additional " + (pylonsRequired === 1 ? "pylon" : "pylons") + "!");
   }
 }
