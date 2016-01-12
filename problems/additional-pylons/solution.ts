@@ -26,6 +26,10 @@ export class Solution implements ISolution<string, string> {
     let supply = parseInt(input.split(' ')[0]) * 8;
     let units = input.split(' ').slice(1);
 
+    for (let u of units) {
+      supply -= this.units[u];
+    }
+
     return units.join(' ');
   }
 }
