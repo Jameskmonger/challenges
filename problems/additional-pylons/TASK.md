@@ -34,3 +34,20 @@ Take in a single integer `n`, followed by a space-separated list of units (see a
 `n` represents the pylon count for the player - each pylon provides 8 supply.
 
 Calculate whether or not the player can build the units that they requested. If they can, simply output "true". If they can't tell them how many pylons they need to create.
+
+## Examples
+
+```
+Input: 2 Probe Probe Probe Probe Stalker Zealot Carrier Probe Zealot
+Output: You must construct 1 additional pylon!
+```
+
+```
+Input: 5 Mothership Carrier Probe Tempest HighTemplar
+Output: true
+```
+
+```
+Input: 0 Mothership Colossus Zealot
+Output: You must construct 2 additional pylons!
+```
