@@ -30,6 +30,10 @@ export class Solution implements ISolution<string, string> {
       supply -= this.units[u];
     }
 
+    if (supply >= 0) {
+      return "true";
+    }
+
     return units.join(' ');
   }
 }
