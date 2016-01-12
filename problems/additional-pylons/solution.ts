@@ -23,7 +23,9 @@ export class Solution implements ISolution<string, string> {
   };
 
   solve(input: string): string {
-    let supply = parseInt(input.split(' ')[0]) * 8;
+    let pylonValue = 8;
+
+    let supply = parseInt(input.split(' ')[0]) * pylonValue;
     let units = input.split(' ').slice(1);
 
     for (let u of units) {
@@ -34,6 +36,8 @@ export class Solution implements ISolution<string, string> {
       return "true";
     }
 
-    return "You must construct " + Math.ceil((supply * -1) / 8) + " additional pylons!";
+    let pylonsRequired = Math.ceil((supply * -1) / pylonValue);
+
+    return "You must construct " + pylonsRequired + " additional pylons!";
   }
 }
