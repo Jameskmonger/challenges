@@ -35,6 +35,6 @@ export class Solution implements ISolution<string, string> {
 
     return (supply >= 0
       ? "true"
-      : "You must construct " + pylonsRequired + " additional " + (pylonsRequired === 1 ? "pylon" : "pylons") + "!");
+      : "You must construct " + pylonsRequired + " additional pylon" + (pylonsRequired === 1 ? "" : "s") + "!");
   }
 }
