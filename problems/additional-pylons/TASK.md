@@ -35,6 +35,8 @@ Take in a single integer `n`, followed by a space-separated list of units (see a
 
 Calculate whether or not the player can build the units that they requested. If they can, simply output "true". If they can't tell them how many pylons they need to create.
 
+The pylon noun must be correctly pluralised (`1 pylon`, `2 pylons`, etc)
+
 ## Examples
 
 ```
