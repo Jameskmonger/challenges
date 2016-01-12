@@ -6,8 +6,8 @@ export class Solution implements ISolution<number, string> {
   solve(input: number): string {
     let output = "";
 
-    for (let i = 0; i < input; i++) {
-
+    for (let i = 0; i < input + 1; i++) {
+      output = output + this.alphabet[i] + output;
     }
 
     return output;
