@@ -23,7 +23,7 @@ export class Solution implements ISolution<string, string> {
   };
 
   solve(input: string): string {
-    let pylons = parseInt(input.split(' ')[0]);
+    let supply = parseInt(input.split(' ')[0]) * 8;
     let units = input.split(' ').slice(1);
 
     return units.join(' ');
