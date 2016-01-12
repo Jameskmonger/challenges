@@ -27,6 +27,7 @@
         "gulpfile.ts",
         "problems/abacaba/solution.ts",
         "problems/abacaba/tests.ts",
+        "problems/additional-pylons/solution.ts",
         "problems/additional-pylons/tests.ts",
         "problems/challenging-this-is/solution.ts",
         "problems/challenging-this-is/tests.ts",
