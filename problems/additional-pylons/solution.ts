@@ -37,12 +37,7 @@ export class Solution implements ISolution<string, string> {
     }
 
     let pylonsRequired = Math.ceil((supply * -1) / pylonValue);
-    let pylonWord = "pylons";
 
-    if (pylonsRequired === 1) {
-      pylonWord = "pylon";
-    }
-
-    return "You must construct " + pylonsRequired + " additional " + pylonWord + "!";
+    return "You must construct " + pylonsRequired + " additional " + (pylonsRequired === 1 ? "pylon" : "pylons") + "!";
   }
 }
