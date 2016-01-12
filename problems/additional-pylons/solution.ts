@@ -23,9 +23,8 @@ export class Solution implements ISolution<string, string> {
   };
 
   solve(input: string): string {
-    var parts = input.split(' ');
-    var pylons = parseInt(parts[0]);
-    var units = parts.slice(1);
+    let pylons = parseInt(input.split(' ')[0]);
+    let units = input.split(' ').slice(1);
 
     return units.join(' ');
   }
