@@ -24,7 +24,6 @@ export class Solution implements ISolution<string, string> {
 
   solve(input: string): string {
     let pylonValue = 8;
-
     let supply = parseInt(input.split(' ')[0]) * pylonValue;
 
     for (let u of input.split(' ').slice(1)) {
